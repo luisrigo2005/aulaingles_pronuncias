@@ -11,7 +11,7 @@ with sr.Microphone() as source:
 
 # Converte o áudio em texto utilizando o português como linguagem
 try:
-    text = recognizer.recognize_google(audio)
+    text = recognizer.recognize_google(audio,language='pt-BR')
 except sr.UnknownValueError:
     print("O Google Speech Recognition não entendeu o seu áudio")
 

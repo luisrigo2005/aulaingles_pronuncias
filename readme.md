@@ -44,4 +44,6 @@ A sexta parte do código imprime o texto.
 Para obter melhores resultados, fale em um ambiente silencioso.
 Se o aplicativo não entender sua voz, tente novamente.
 Você pode ajustar as configurações do aplicativo para melhorar a precisão do reconhecimento de fala.
+Caso queira mudar a linguagem utilizada na linha 14 do scritp Python adicione ao final o seguinte: 
+text = recognizer.recognize_google(audio,language='pt-BR')
 Espero que este tutorial seja útil!
