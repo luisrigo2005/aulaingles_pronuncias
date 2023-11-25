@@ -17,32 +17,6 @@ pip install pyaudio
 # Utilizando o aplicativo
 Para utilizar o aplicativo, crie um arquivo com o nome grava_audio_converte_txt.py em um editor de texto e insira o texto a seguir:
 
-Python
-# Importar as bibliotecas
-import speech_recognition as sr
-
-# Criar um objeto de reconhecimento de fala
-recognizer = sr.Recognizer()
-
-# Capturar áudio do microfone
-with sr.Microphone() as source:
-    print('Diga algo: ')
-    audio = recognizer.listen(source)
-
-# Convertir o áudio em texto utilizando o português como linguagem
-try:
-    text = recognizer.recognize_google(audio,language='pt-BR')
-except sr.UnknownValueError:
-    print("O Google Speech Recognition não entendeu o seu áudio")
-
-# Salvar o texto convertido em um arquivo
-with open("texto.txt", "w") as f:
-    f.write(text)
-
-# Imprimir o texto
-print(text)
-
-
 Salve o arquivo e feche o editor de texto.
 
 Para executar o aplicativo, abra um terminal e execute o seguinte comando:
